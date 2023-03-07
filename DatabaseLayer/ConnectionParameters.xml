@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<connection>
+    <host>localhost</host>
+    <user>root</user>
+    <password></password>
+    <database_prefix></database_prefix>
+    <database_name>agencija</database_name>
+</connection>
