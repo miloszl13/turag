@@ -25,16 +25,22 @@ class Connection{
 
     // Load Connection Parameters From Location
     public function LoadConnectionParameters($parametersLocation){
-        $parametersFile = simplexml_load_file($parametersLocation) or die("Error. Parameters file not found!");
+        // $parametersFile = simplexml_load_file($parametersLocation) or die("Error. Parameters file not found!");
    
-        $this->host = $parametersFile->host;
-        $this->user = $parametersFile->user;
-        $this->password = $parametersFile->password;
+        // $this->host = $parametersFile->host;
+        // $this->user = $parametersFile->user;
+        // $this->password = $parametersFile->password;
 
-        $this->dbPrefix = $parametersFile->database_prefix;
-        $this->dbName = $parametersFile->database_name;
+        // $this->dbPrefix = $parametersFile->database_prefix;
+        // $this->dbName = $parametersFile->database_name;
 
-        $this->FullNameDB = $this->dbPrefix . $this->dbName;
+        //$this->FullNameDB = $this->dbPrefix . $this->dbName;
+        //novo
+        $this->host = "turistickaagencijaserver.mysql.database.azure.com";
+        $this->user = "milos123";
+        $this->password = "sifrazabazu.1";
+        $this->FullNameDB="require";
+
     }
 
     // Connect to Database
